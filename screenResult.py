@@ -11,12 +11,12 @@ class ScreenResult:
             self.text = self.font.render("GANASTE!!! Score: " + str(score), True, (0, 255, 0))
             # self.img = pygame.image.load('imagenes/astronauta_ganaste.jpeg')
         else:
-            self.text = self.font.render("Perdiste!!! Score: " + str(score), True, (0, 255, 0))
+            self.text = self.font.render("Perdiste! Score: " + str(score), True, (255, 0, 0))
             # self.img = pygame.image.load('imagenes/imagen_perdiste.jpg')
         self.text_rect = self.text.get_rect(center=(self.half_width, self.half_width))
         # self.img_rect = self.img.get_rect(center=(self.half_width, self.half_height // 2))
         
-        self.text_name = self.font.render("Estudiante UPCH", True, (120, 125, 0))
+        self.text_name = self.font.render("\ -_- /", True, (125, 125, 125))
         self.text_name_rect = self.text.get_rect(center=(self.half_width, self.half_height + 40))
 
     def draw(self, screen):
